@@ -1,5 +1,6 @@
 DNS Field Guide — IT 3203 Project Milestone 1
 
-Open index.html in a browser to view the site. The website has eight HTML pages and one shared stylesheet (styles.css). All images are local assets.
+Open index.html in a browser to view the site. The website has eight HTML pages, one shared stylesheet (styles.css), and local image assets.
 
-To publish with GitHub Pages, upload these source files to the root of the assigned repository and enable Pages for the intended branch and folder. The assignment’s repository URL was not included with the supplied files.
+Live site: https://falleng101.github.io/dns-project/
+Source repository: https://github.com/FallenG101/FallenG101.github.io/tree/main/dns-project
