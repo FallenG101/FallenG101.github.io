@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Consider how DNS may continue to improve in privacy, connection setup, and operational reliability.">
+  <title>The Future of DNS | DNS and Why the Web Depends on It</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Shared site header and navigation keep every topic page connected. -->
+  <header class="site-header">
+    <a class="wordmark" href="index.html">DNS <span>FIELD GUIDE</span></a>
+    <nav aria-label="Main navigation"><ul>      <li><a href="index.html">Home</a></li>
+      <li><a href="origins.html">Origins</a></li>
+      <li><a href="how-dns-works.html">How DNS works</a></li>
+      <li><a href="dns-today.html">DNS today</a></li>
+      <li><a href="future.html" aria-current="page">Future</a></li>
+      <li><a href="concepts.html">Key concepts</a></li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="about.html">About</a></li></ul></nav>
+  </header>
+  <!-- Page-specific content begins here; all pages use the same stylesheet. -->
+  <main id="main" class="page-shell">
+    <h1>The Future of DNS</h1>
+<p class="lead">DNS is likely to keep its hierarchy, zones, and delegation model while software and standards improve privacy, connection speed, and management.</p>
+<h2>More private connections</h2><p>Encrypted DNS options such as DoT, DoH, and DoQ can reduce exposure of DNS queries on the network path between a device and its resolver. Their usefulness depends on the resolver a person chooses and how the device or network is configured.</p>
+<h2>Faster connection setup</h2><p>SVCB and HTTPS records can provide connection details, such as alternate targets or supported protocols, before a browser connects. These records can help a client select an efficient route while the server’s TLS certificate still verifies the connection.</p>
+<h2>Safer operations</h2><p>Automation can help administrators validate configuration changes, rotate DNSSEC keys, and detect mistakes before they disrupt service. Tools need to make complex tasks easier while still showing what changed and why.</p>
+<h2>Open questions</h2><ul><li>How should users balance privacy with filtering and monitoring on school or workplace networks?</li><li>How can encrypted DNS be managed clearly across browsers, operating systems, and networks?</li><li>How can operators reduce configuration errors while keeping DNS systems understandable?</li></ul>
+<p>These are active design challenges. Their outcomes will depend on standards, software, network policies, and operational practice.</p>
+  </main>
+  <footer class="site-footer"><p>IT 3203 class project · <a href="https://ksuweb.github.io/IT3203/">Course website</a></p><p>Grant Hughes · Project Milestone 1</p></footer>
+</body>
+</html>

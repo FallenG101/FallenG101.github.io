@@ -1,3 +1,5 @@
-# FallenG101.github.io
+# DNS Field Guide — IT 3203 Project Milestone 1
 
-This is the home of my basic website for my web development class!
+This repository contains an eight-page introduction to the Domain Name System. The site uses a shared stylesheet and local command output images.
+
+Live site: https://falleng101.github.io/

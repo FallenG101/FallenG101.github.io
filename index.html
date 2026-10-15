@@ -1,16 +1,42 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>My Website</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: #ffffff;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A clear introduction to the Domain Name System: how names lead devices to services, how lookups work, and why DNS matters.">
+  <title>DNS and Why the Web Depends on It</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Is this thing on?</h1>
-  <p>HTML is fun</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Shared site header and navigation keep every topic page connected. -->
+  <header class="site-header">
+    <a class="wordmark" href="index.html">DNS <span>FIELD GUIDE</span></a>
+    <nav aria-label="Main navigation"><ul>      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="origins.html">Origins</a></li>
+      <li><a href="how-dns-works.html">How DNS works</a></li>
+      <li><a href="dns-today.html">DNS today</a></li>
+      <li><a href="future.html">Future</a></li>
+      <li><a href="concepts.html">Key concepts</a></li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="about.html">About</a></li></ul></nav>
+  </header>
+  <!-- Page-specific content begins here; all pages use the same stylesheet. -->
+  <main id="main" class="page-shell">
+    <section class="hero">
+  <p class="eyebrow">IT 3203 · Project milestone 1</p>
+  <h1>DNS and why the web depends on it</h1>
+  <p class="lead">The Domain Name System turns names people can remember into information computers use to reach websites, email, and other Internet services.</p>
+  <a class="primary-link" href="how-dns-works.html">Explore how a lookup works <span aria-hidden="true">→</span></a>
+</section>
+<section class="intro-grid" aria-labelledby="start-heading">
+  <div><h2 id="start-heading">Start with the essentials</h2><p>DNS is a distributed naming system. Resolvers follow referrals through a hierarchy of servers, then save answers temporarily so repeated requests can be faster.</p></div>
+  <figure class="image-feature"><img src="assets/dig-command.png" alt="Terminal output from a dig command used to look up a domain"><figcaption>A command line lookup can show DNS answers and timing.</figcaption></figure>
+</section>
+<section aria-labelledby="contents-heading"><h2 id="contents-heading">Contents</h2><ol class="contents-list"><li><a href="origins.html">Origins of DNS</a><span>Why the Internet moved beyond a shared host file.</span></li><li><a href="how-dns-works.html">How DNS works</a><span>The hierarchy, servers, records, and lookup path.</span></li><li><a href="dns-today.html">DNS today</a><span>Security, privacy, and services that depend on DNS.</span></li><li><a href="future.html">The future of DNS</a><span>Newer records and continuing design challenges.</span></li><li><a href="concepts.html">Key concepts</a><span>Seven terms that make DNS easier to understand.</span></li><li><a href="references.html">References and resources</a><span>Standards, documentation, and learning materials.</span></li><li><a href="about.html">About</a><span>The student and the project.</span></li></ol></section>
+<section><h2>Key terms</h2><dl class="concept-list"><dt>Domain name</dt><dd>A readable label such as example.com.</dd><dt>Resolver</dt><dd>The software that finds DNS answers for a device.</dd><dt>Resource record</dt><dd>A typed item of DNS data, such as an address or mail server.</dd></dl></section>
+<section><h2>At a glance</h2><table><caption>Three ideas behind a DNS lookup</caption><thead><tr><th scope="col">Idea</th><th scope="col">What it means</th></tr></thead><tbody><tr><th scope="row">Names</th><td>People use domain names instead of memorizing numeric addresses.</td></tr><tr><th scope="row">Delegation</th><td>Different organizations manage different parts of the name hierarchy.</td></tr><tr><th scope="row">Caching</th><td>Resolvers reuse valid answers for the period set by the record’s TTL.</td></tr></tbody></table></section>
+  </main>
+  <footer class="site-footer"><p>IT 3203 class project · <a href="https://ksuweb.github.io/IT3203/">Course website</a></p><p>Grant Hughes · Project Milestone 1</p></footer>
 </body>
 </html>

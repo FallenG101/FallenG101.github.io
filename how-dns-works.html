@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Follow a domain name through recursive resolution, referrals, authoritative answers, and caching.">
+  <title>How DNS Works | DNS and Why the Web Depends on It</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Shared site header and navigation keep every topic page connected. -->
+  <header class="site-header">
+    <a class="wordmark" href="index.html">DNS <span>FIELD GUIDE</span></a>
+    <nav aria-label="Main navigation"><ul>      <li><a href="index.html">Home</a></li>
+      <li><a href="origins.html">Origins</a></li>
+      <li><a href="how-dns-works.html" aria-current="page">How DNS works</a></li>
+      <li><a href="dns-today.html">DNS today</a></li>
+      <li><a href="future.html">Future</a></li>
+      <li><a href="concepts.html">Key concepts</a></li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="about.html">About</a></li></ul></nav>
+  </header>
+  <!-- Page-specific content begins here; all pages use the same stylesheet. -->
+  <main id="main" class="page-shell">
+    <h1>How DNS Works</h1>
+<p class="lead">When a device needs an address for a domain, it asks a recursive resolver. If the resolver has no valid cached answer, it follows referrals until it reaches an authoritative server.</p>
+<h2>A lookup in six steps</h2><ol class="steps"><li><strong>The device asks.</strong> The browser or operating system sends a question to its configured resolver.</li><li><strong>The resolver checks its cache.</strong> A valid cached answer can be returned immediately.</li><li><strong>The root points to a TLD.</strong> For a name ending in .com, the root server refers the resolver to .com name servers.</li><li><strong>The TLD points to the domain.</strong> The .com servers identify the authoritative name servers for the domain.</li><li><strong>The authoritative server answers.</strong> It returns the requested record, such as an A or AAAA address record.</li><li><strong>The resolver replies and caches.</strong> The device receives the answer and can connect to the destination.</li></ol>
+<h2>The hierarchy</h2><p>Domain names are read from right to left. In <code>www.example.com</code>, <code>.com</code> is the top-level domain, <code>example</code> is the second-level domain, and <code>www</code> is a host name below it. The root sits above all top-level domains.</p>
+<h2>Common records</h2><table><caption>Examples of DNS record types</caption><thead><tr><th scope="col">Type</th><th scope="col">Purpose</th><th scope="col">Example use</th></tr></thead><tbody><tr><th scope="row">A</th><td>Maps a name to an IPv4 address</td><td>example.com → 192.0.2.80</td></tr><tr><th scope="row">AAAA</th><td>Maps a name to an IPv6 address</td><td>example.com → 2001:db8::80</td></tr><tr><th scope="row">CNAME</th><td>Names an alias for another name</td><td>www → site.example.net</td></tr><tr><th scope="row">MX</th><td>Identifies mail servers</td><td>Mail delivery for a domain</td></tr><tr><th scope="row">NS</th><td>Names authoritative servers</td><td>Delegation to a zone’s servers</td></tr><tr><th scope="row">TXT</th><td>Stores text data</td><td>Domain verification and email policy</td></tr></tbody></table>
+<h2>Why caching helps</h2><p>Each record has a time to live (TTL). A resolver can reuse the answer until that time expires. A shorter TTL helps changes become visible sooner but can increase repeated queries; a longer TTL reduces repeated work but may keep older information in caches for longer.</p>
+  </main>
+  <footer class="site-footer"><p>IT 3203 class project · <a href="https://ksuweb.github.io/IT3203/">Course website</a></p><p>Grant Hughes · Project Milestone 1</p></footer>
+</body>
+</html>
