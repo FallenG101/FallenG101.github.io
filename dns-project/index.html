@@ -26,28 +26,28 @@
     <section class="hero">
   <p class="eyebrow">IT 3203 · Project milestone 1</p>
   <h1>DNS and why the web depends on it</h1>
-  <p class="lead">The Domain Name System turns names people can remember into information computers use to reach websites, email, and other Internet services.</p>
+  <p class="lead">The Domain Name System (DNS) turns names people can remember into information computers use to find websites, email, and other Internet services.</p>
   <a class="primary-link" href="how-dns-works.html">Explore how a lookup works <span aria-hidden="true">→</span></a>
 </section>
 <section class="intro-grid" aria-labelledby="start-heading">
-  <div><h2 id="start-heading">Start with the essentials</h2><p>DNS is a distributed naming system. Resolvers follow referrals through a hierarchy of servers, then save answers temporarily so repeated requests can be faster.</p></div>
-  <figure class="image-feature"><img src="assets/dig-command.png" alt="Terminal output from a dig command used to look up a domain"><figcaption>A command line lookup can show DNS answers and timing.</figcaption></figure>
+  <div><h2 id="start-heading">Start with the essentials</h2><p>DNS helps devices find the servers behind website and service names. Resolvers follow directions from one DNS server to another, then save answers for a while so they can respond faster next time.</p></div>
+  <figure class="image-feature"><img src="assets/dig-command.png" alt="Terminal output from a dig command used to look up a domain"><figcaption>The dig command shows DNS answers and how long a lookup takes.</figcaption></figure>
 </section>
 
 <section aria-labelledby="contents-heading">
   <h2 id="contents-heading">Contents</h2>
   <ul class="contents-list">
-    <li><a href="origins.html">Origins of DNS</a> — Why the Internet moved beyond a shared host file.</li>
-    <li><a href="how-dns-works.html">How DNS works</a> — The hierarchy, servers, records, and lookup path.</li>
-    <li><a href="dns-today.html">DNS today</a> — Security, privacy, and services that depend on DNS.</li>
-    <li><a href="future.html">The future of DNS</a> — Newer records and continuing design challenges.</li>
-    <li><a href="concepts.html">Key concepts</a> — Seven terms that make DNS easier to understand.</li>
-    <li><a href="references.html">References and resources</a> — Standards, documentation, and learning materials.</li>
+    <li><a href="origins.html">Origins of DNS</a> — How DNS replaced shared host files.</li>
+    <li><a href="how-dns-works.html">How DNS works</a> — How servers find and return DNS answers.</li>
+    <li><a href="dns-today.html">DNS today</a> — How DNS supports everyday services, security, and privacy.</li>
+    <li><a href="future.html">The future of DNS</a> — New tools and questions for DNS.</li>
+    <li><a href="concepts.html">Key concepts</a> — Seven terms used throughout the site.</li>
+    <li><a href="references.html">References and resources</a> — Sources used for this project.</li>
     <li><a href="about.html">About</a> — The student and the project.</li>
   </ul>
 </section>
-<section><h2>Key terms</h2><dl class="concept-list"><dt>Domain name</dt><dd>A readable label such as example.com.</dd><dt>Resolver</dt><dd>The software that finds DNS answers for a device.</dd><dt>Resource record</dt><dd>A typed item of DNS data, such as an address or mail server.</dd></dl></section>
-<section><h2>At a glance</h2><table><caption>Three ideas behind a DNS lookup</caption><thead><tr><th scope="col">Idea</th><th scope="col">What it means</th></tr></thead><tbody><tr><th scope="row">Names</th><td>People use domain names instead of memorizing numeric addresses.</td></tr><tr><th scope="row">Delegation</th><td>Different organizations manage different parts of the name hierarchy.</td></tr><tr><th scope="row">Caching</th><td>Resolvers reuse valid answers for the period set by the record’s TTL.</td></tr></tbody></table></section>
+<section><h2>Key terms</h2><dl class="concept-list"><dt>Domain name</dt><dd>A readable name, such as example.com.</dd><dt>Resolver</dt><dd>A service that looks up DNS answers for a device.</dd><dt>Resource record</dt><dd>A labeled piece of DNS information, such as a website address or mail server.</dd></dl></section>
+<section><h2>At a glance</h2><table><caption>Three ideas behind a DNS lookup</caption><thead><tr><th scope="col">Idea</th><th scope="col">What it means</th></tr></thead><tbody><tr><th scope="row">Names</th><td>People use names instead of remembering number addresses.</td></tr><tr><th scope="row">Delegation</th><td>Different groups manage different parts of the DNS name system.</td></tr><tr><th scope="row">Caching</th><td>Resolvers save answers until their time limit expires.</td></tr></tbody></table></section>
   </main>
   <footer class="site-footer"><p>IT 3203 class project · <a href="https://ksuweb.github.io/IT3203/">Course website</a></p><p>Grant Hughes · Project Milestone 1</p></footer>
 </body>

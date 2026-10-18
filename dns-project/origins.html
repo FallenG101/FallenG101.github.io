@@ -24,13 +24,13 @@
   <!-- Page-specific content begins here; all pages use the same stylesheet. -->
   <main id="main" class="page-shell">
     <h1>Origins of DNS</h1>
-<p class="lead">Before DNS, networked computers relied on host files: centrally maintained lists mapping names to addresses. As the network grew, distributing and keeping every copy current became difficult.</p>
-<h2>The host file approach</h2><ol><li>Organizations sent new host names and addresses to a central registry.</li><li>A master host file was published.</li><li>Each connected system downloaded a copy and had to refresh it regularly.</li></ol>
-<p>That approach made every machine depend on a shared list. A stale copy could point to an old address, and frequent updates became harder as more systems joined the Internet.</p>
-<h2>A distributed name system</h2><p>In 1983, Paul Mockapetris described the first version of DNS. DNS divided the namespace into a hierarchy of zones. Each zone could be managed by a different organization, while resolvers could search across the hierarchy when they needed an answer.</p>
-<figure class="image-feature"><img src="assets/nslookup-command.png" alt="Terminal output from an nslookup command"><figcaption>DNS lookup tools make the name-to-address process visible.</figcaption></figure>
-<h2>The standards</h2><p>RFC 1034 describes DNS concepts and facilities. RFC 1035 specifies implementation details, including resource records and DNS message formats. Together they established the core model used by DNS software.</p>
-<p>DNS could grow without requiring every device to download a complete, centrally maintained list of Internet names.</p>
+<p class="lead">Before DNS, computers used host files: shared lists that matched names to addresses. As more computers joined the Internet, keeping every copy up to date became difficult.</p>
+<h2>The host file approach</h2><ol><li>Organizations sent new computer names and addresses to a central registry.</li><li>The registry published one master host file.</li><li>Each computer downloaded its own copy and had to update it regularly.</li></ol>
+<p>Every computer depended on the same list. An old copy could point to the wrong address, and updating the list became harder as the network grew.</p>
+<h2>A distributed name system</h2><p>In 1983, Paul Mockapetris described the first version of DNS. It divided names into levels called zones. Different organizations could manage different zones, while resolvers could search across them to find an answer.</p>
+<figure class="image-feature"><img src="assets/nslookup-command.png" alt="Terminal output from an nslookup command"><figcaption>The nslookup command shows how a domain name is looked up.</figcaption></figure>
+<h2>The standards</h2><p>RFC 1034 explains DNS concepts. RFC 1035 describes how to build DNS software, including its records and message formats. These standards set the foundation for DNS.</p>
+<p>With DNS, new names could be added without asking every computer to download a full list of Internet names.</p>
   </main>
   <footer class="site-footer"><p>IT 3203 class project · <a href="https://ksuweb.github.io/IT3203/">Course website</a></p><p>Grant Hughes · Project Milestone 1</p></footer>
 </body>
