@@ -55,10 +55,6 @@ p { max-width: 78ch; }
 .image-feature { max-width: 700px; margin: 1rem 0; }
 .image-feature img { display: block; max-width: 100%; height: auto; border: 1px solid var(--border); }
 figcaption { margin-top: .3rem; color: var(--muted); font-size: .9rem; }
-.contents-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1.5rem; margin: .8rem 0; padding: 0; list-style: none; border-top: 1px solid var(--border); }
-.contents-list li { margin: 0; padding: .65rem .1rem; border-bottom: 1px solid var(--border); }
-.contents-list li a { display: block; font-weight: bold; }
-.contents-list li span { color: var(--muted); font-size: .92rem; }
 table { width: 100%; margin: .8rem 0 1.5rem; border-collapse: collapse; }
 caption { padding: .4rem; color: var(--muted); text-align: left; }
 th, td { padding: .5rem .6rem; border: 1px solid var(--border); text-align: left; vertical-align: top; }
@@ -76,6 +72,5 @@ code { padding: .05rem .2rem; background: var(--surface); font-family: Consolas,
 .skip-link { position: absolute; top: -4rem; left: 1rem; z-index: 5; padding: .5rem; background: var(--surface); }
 .skip-link:focus { top: 1rem; }
 @media (max-width: 700px) {
-  .contents-list { grid-template-columns: 1fr; }
   .site-footer { flex-direction: column; }
 }
