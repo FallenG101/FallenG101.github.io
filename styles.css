@@ -1,4 +1,5 @@
-/* One shared stylesheet keeps every page easy to read and consistent. */
+/* Shared stylesheet for all pages */
+@font-face { font-family: Inter; src: url("assets/Inter.ttf") format("truetype"); font-style: normal; font-weight: 100 900; font-display: swap; }
 :root {
   color-scheme: dark;
   --background: #151515;
@@ -7,7 +8,7 @@
   --muted: #bcbcbc;
   --link: #8ec5ff;
   --border: #454545;
-  --sans: Arial, Helvetica, sans-serif;
+  --sans: Inter, Arial, Helvetica, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -48,7 +49,7 @@ p { max-width: 78ch; }
 .hero { padding: .6rem 0 1.3rem; border-bottom: 1px solid var(--border); }
 .hero h1 { max-width: 720px; }
 .hero .lead { margin: .5rem 0 1rem; }
-.intro-grid { display: block; padding: 1rem 0 .2rem; }
+.intro-grid { padding: 1rem 0 .2rem; }
 .intro-grid h2 { margin-top: .5rem; }
 .image-feature { max-width: 700px; margin: 1rem 0; }
 .image-feature img { display: block; max-width: 100%; height: auto; border: 1px solid var(--border); }
@@ -56,7 +57,7 @@ figcaption { margin-top: .3rem; color: var(--muted); font-size: .9rem; }
 .contents-list { margin: .8rem 0; }
 table { width: 100%; margin: .8rem 0 1.5rem; border-collapse: collapse; }
 caption { padding: .4rem; color: var(--muted); text-align: left; }
-th, td { padding: .5rem .6rem; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+th, td { overflow-wrap: anywhere; padding: .5rem .6rem; border: 1px solid var(--border); text-align: left; vertical-align: top; }
 thead th { background: var(--surface); }
 ol, ul { padding-left: 1.35rem; }
 li { margin: .3rem 0; }
@@ -72,3 +73,16 @@ code { padding: .05rem .2rem; background: var(--surface); font-family: Consolas,
 @media (max-width: 700px) {
   .site-footer { flex-direction: column; }
 }
+
+/* Quiz controls match the rest of the site */
+button { background: #8ec5ff; color: #102338; border: 0; border-radius: .35rem; padding: .7rem 1rem; font: inherit; font-weight: bold; cursor: pointer; }
+button:hover { background: #c6e1ff; }
+button:focus-visible, input:focus-visible { outline: 3px solid #a9d5ff; outline-offset: 3px; }
+fieldset { min-inline-size: 0; border: 1px solid var(--border); background: var(--surface); border-radius: .4rem; padding: 1rem; margin: 1.3rem 0; }
+legend { font-weight: bold; padding: 0 .35rem; }
+.option { display: block; padding: .3rem; }
+input[type=text] { background: #111; color: white; border: 1px solid #aaa; padding: .65rem; border-radius: .25rem; font: inherit; max-width: 100%; }
+#timer { font-weight: bold; }
+#results { margin: 1.5rem 0; }
+.correct { color: #a8e6b1; } .incorrect { color: #ffb5ad; }
+.result-item { border-bottom: 1px solid var(--border); padding: .4rem 0; }
